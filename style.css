@@ -1,0 +1,265 @@
+*{
+   
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+ 
+}
+.darkHeader{
+    background-color: #000000e3;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+body{
+  background:   rgba(173, 173, 173, 0.12);
+  
+}
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    
+        display: -ms-flexbox!important;
+        display: flex!important;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+        justify-content: center;
+        
+    
+}
+.navigation {
+    background-color: rgba(17, 17, 17, 0.267);
+    position: fixed;
+    width: 100%;
+}
+a.nav-item.nav-link {
+    color: white !important;
+    font-size: 20px;
+}
+.header{
+    height: 980px;
+    background: url(pozadinaa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+  .naslov{
+      position: absolute;
+      top: 40%;
+      left: 31%;
+      color: white;
+
+  }
+
+  .naslov h3{
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .naslov h1{
+    font-size: 90px;
+  }
+
+  .overlay {
+    height: 980px;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/*MAIN CONTENT*/
+
+.section{
+    padding: 10px;
+    width: 30%;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 10px
+}
+
+.section2{
+    padding: 10px;
+    width: 30%;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 10px;
+    display:block;
+}
+
+.main-content{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    height: 600px;
+}
+
+.naslovi{
+    margin-top: 250px;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+.section-heading h2.text-center {
+    padding: 33px;
+}
+
+.section-heading {
+    height: 100px;
+    border-bottom: 1px solid;
+}
+
+.section-title {
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+.section-title button.btn.btn-danger {
+    margin-top: 30px;
+}
+
+/*MAIN CONTENT SECOND*/
+
+.main-content-second {
+    background-image: url(147.png);
+    height: 600px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.second-content {
+    position: relative;
+    top: 80px;
+    left: 151px;
+    width: 450px;
+    height: 470px;
+    position: relative;
+    display: inline-block;
+    background-color: #ffffffcc;
+    border-radius: 10px;
+}
+
+/*MAIN CONTENT THIRD*/
+
+.proizvodi{
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 40px;
+}
+
+.proizvodi-title{
+    padding: 70px;
+}
+
+.proizvodi.proizvod2, .proizvod4 {
+    background: #e4e4e4;
+}
+
+/*USLUGE*/
+
+h4.card-title.text-center {
+    padding: 25px;
+    font-size: 35px;
+}
+
+button.btn.btn-danger.text-center.justify-content-center {
+    margin-left: 34%;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    max-height: 582px;
+}
+
+/*GALERIJA*/
+
+#Galerija{
+    margin-top: 350px;
+}
+
+.gallery{
+    display: flex;
+}
+
+.slike {
+    width: 25%;
+    
+}
+
+.slike img{
+    width: 100%;
+}
+
+.slike:hover{
+    background-color: #ff000023;
+    
+}
+
+/*KONTAKT*/
+
+.skewed{
+    background-color: #C62835;
+    height:900px;
+    transform: skew(0deg, -10deg);
+}
+
+.form{
+    transform: skew(0deg, 10deg);  
+    padding: 120px;
+}
+
+.form-group {
+    font-size: 20px;
+    color: #ffffffc5;
+    padding: 20px;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 1024px){
+	.naslov {
+    position: absolute;
+    text-align: center;
+    top: 28%;
+    left: 10%;
+    color: white;
+}
+
+.section-title {
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.section-title button.btn.btn-danger {
+    margin-top: 70px;
+}
+
+.proizvodi-img img {
+    width: 420px;
+}
+
+h4.card-title.text-center {
+    padding: 25px;
+    font-size: 20px;
+}
+
+.card{
+width:200px !important;
+}
+
+button.btn.btn-danger.text-center.justify-content-center {
+    margin-left: 15%;
+}
+
+}
