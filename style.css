@@ -36,10 +36,6 @@ a.nav-item.nav-link {
     background-size: cover;
 }
 
-button.navbar-toggler.collapsed {
-    background: #ffffff73;
-}
-
 
   .naslov{
       position: absolute;
@@ -63,6 +59,10 @@ button.navbar-toggler.collapsed {
     width: 100%;
     position: absolute;
     background-color: rgba(0,0,0,0.5);
+}
+
+button.navbar-toggler.collapsed {
+    background: #ffffff73;
 }
 
 /*MAIN CONTENT*/
@@ -258,6 +258,15 @@ footer .fab:hover{
     padding: 20px;
 }
 
+.disabled {
+    position: fixed;
+    bottom: 0px;
+    font-size: 76px;
+    padding: 0px 20px;
+    left: 70%;
+    display: none;
+}
+
 /*RESPONSIVE*/
 
 @media (max-width: 1600px){
@@ -354,6 +363,15 @@ button.btn.btn-danger.text-center.justify-content-center {
 
 button.btn.btn-danger.text-center.justify-content-center {
     margin-left: 0%;
+}
+
+.disabled {
+    position: fixed;
+    bottom: 0px;
+    font-size: 76px;
+    padding: 0px 20px;
+    left: 70%;
+    display: block;
 }
 
 }
