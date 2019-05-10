@@ -36,6 +36,10 @@ a.nav-item.nav-link {
     background-size: cover;
 }
 
+button.navbar-toggler.collapsed {
+    background: #ffffff73;
+}
+
 
   .naslov{
       position: absolute;
