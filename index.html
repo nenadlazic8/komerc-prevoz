@@ -29,6 +29,9 @@
   <script src="script/script.js"></script>
   <!--Lightbox-->
 
+  <!--Fontawesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
 
 </head>
 
@@ -38,7 +41,7 @@
     <div class="header">
       <div class="overlay"></div>
       <div class="navigation">
-        <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
+        <!-- <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
           <a class="navbar-brand" href="#"><img src="logo1.png" height="70px" width="70px"></a>
           <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navigacija">
             <span class="navbar-toggler-icon"></span>
@@ -53,6 +56,45 @@
               <a class="nav-item nav-link" href="#Kontakt">Kontakt</a>
             </div>
           </div>
+        </nav> -->
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+
+            <a class="navbar-brand" href="#"><img src="logo1.png" width="70px" height="70px" title="Komer Prevoz"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigacija">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navigacija">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="#Onama">O nama</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="#Proizvodi">Proizvodi</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="#Usluge">Usluge</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="#Galerija">Galerija</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="#Kontakt">Kontakt</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
         </nav>
       </div>
 
@@ -228,7 +270,7 @@
         <!--1-->
 
         <div class="usluga">
-          <div class="card" style="width:400px">
+          <div class="card">
             <h4 class="card-title text-center">Prevoz</h4>
             <img class="card-img-top" src="prevoz.png" alt="Card image">
             <div class="card-body">
@@ -271,7 +313,7 @@
         <!--2-->
 
         <div class="usluga">
-          <div class="card" style="width:400px">
+          <div class="card">
             <h4 class="card-title text-center">Utovar</h4>
             <img class="card-img-top" src="utovar.png" alt="Card image">
             <div class="card-body">
@@ -314,7 +356,7 @@
         <!--3-->
 
         <div class="usluga">
-          <div class="card" style="width:400px">
+          <div class="card">
             <h4 class="card-title text-center">Iskop</h4>
             <img class="card-img-top" src="iskop.png" alt="Card image">
             <div class="card-body">
@@ -357,7 +399,7 @@
         <!--4-->
 
         <div class="usluga">
-          <div class="card" style="width:400px">
+          <div class="card utovarivac">
             <h4 class="card-title text-center">Utovar utovarivacem</h4>
             <img class="card-img-top" src="utovar2.png" alt="Card image">
             <div class="card-body">
@@ -460,7 +502,7 @@
       </div>
     </div>
     <!--Kontakt-->
-    <h1 class="naslovi text-center">Kontakt</h1>
+    <h1 class="naslovi text-center" id="Kontakt">Kontakt</h1>
     <div class="main-content-six">
 
       <div class="skewed">
@@ -492,6 +534,34 @@
       </div>
 
     </div>
+    <h1 class="naslovi text-center">Kako do nas?</h1>
+    <div class="main-content-seven">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2839.5571540290466!2d21.16239651574629!3d44.62652849696393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4750ef12fe9becfd%3A0xef34293a43bc84f9!2sKOMERC+-+PREVOZ!5e0!3m2!1ssr!2srs!4v1557476827986!5m2!1ssr!2srs" width="100%" height="650" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <footer>
+
+
+      <div class="footer-content">
+        <div class="footer-content-2">
+            <a href="tel:0637898378"><i class="fab fa-whatsapp"></i></a>
+            
+            <a href="https://www.facebook.com/komercprevoz" target="_blank"><i class="fab fa-facebook"></i></a>
+            
+    
+            <a href="https://www.instagram.com/komercprevoz/" target="_blank"><i class="fab fa-instagram"></i></a>
+            
+        </div>
+        <div class="footer-content-3">
+            <p>Developed by Nenad Lazic</p>
+        </div>
+        
+      </div>
+        
+
+
+    </footer>
   </div>
 
   </div>
@@ -501,7 +571,7 @@
 
   <script type="text/javascript">
 
-    $(function () {
+$(function () {
       $(window).scroll(function () {
         if ($(window).scrollTop() > 400 || $(window).scrollTop() > 200) {
           $('.navigation').removeClass('navigation').addClass('darkHeader')
@@ -511,11 +581,7 @@
           $('.darkHeader').removeClass('darkHeader').addClass('navigation')
         }
 
-        if ($(window).scrollTop() > 600 && $(window).innerWidth() > 375) {
-          $('.section').fadeIn(2000);
-        }
-
-        else if ($(window).scrollTop() > 250 && $(window).innerWidth() < 375) {
+        if ($(window).scrollTop() > 600 || $(window).innerWidth() < 1000) {
           $('.section').fadeIn(2000);
         }
 
@@ -525,8 +591,8 @@
       })
 
       $(window).scroll(function () {
-        if ($(window).innerWidth() < 1920) {
-          $('.section').addClass('section2');
+        if ($(window).innerWidth() < 1000) {
+          $('.section').removeClass('section').addClass('section2');
         }
       })
 

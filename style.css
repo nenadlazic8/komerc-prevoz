@@ -19,16 +19,7 @@ body{
     padding: 0;
 }
 
-.navbar-expand-lg .navbar-collapse {
-    
-        display: -ms-flexbox!important;
-        display: flex!important;
-        -ms-flex-preferred-size: auto;
-        flex-basis: auto;
-        justify-content: center;
-        
-    
-}
+
 .navigation {
     background-color: rgba(17, 17, 17, 0.267);
     position: fixed;
@@ -179,6 +170,8 @@ button.btn.btn-danger.text-center.justify-content-center {
 
 .card{
     max-height: 582px;
+    width: 400px;
+    
 }
 
 /*GALERIJA*/
@@ -210,11 +203,11 @@ button.btn.btn-danger.text-center.justify-content-center {
 .skewed{
     background-color: #C62835;
     height:900px;
-    transform: skew(0deg, -10deg);
+    transform: skew(0deg, -5deg);
 }
 
 .form{
-    transform: skew(0deg, 10deg);  
+    transform: skew(0deg, 5deg);  
     padding: 120px;
 }
 
@@ -224,7 +217,64 @@ button.btn.btn-danger.text-center.justify-content-center {
     padding: 20px;
 }
 
+/*FOOTER*/
+
+footer{
+    margin-top: 168px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .fab{
+    
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+
+}
+
+footer .fab:hover{
+    
+    color: #C62835;
+    font-size: 40px;
+    padding: 20px;
+    cursor: pointer;
+
+}
+
+.footer-content {
+    width: 100%;
+    background: black;
+}
+
+.footer-content-2, .footer-content-3 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
 /*RESPONSIVE*/
+
+@media (max-width: 1600px){
+
+.card{
+    width: 350px;
+
+
+}
+
+@media (max-width: 1400px){
+.card {
+    width: 303px;
+}
+
+@media (max-width: 1400px){
+.card {
+    width: 250px;
+}
+
+}
 
 @media (max-width: 1024px){
 	.naslov {
@@ -233,6 +283,10 @@ button.btn.btn-danger.text-center.justify-content-center {
     top: 28%;
     left: 10%;
     color: white;
+}
+
+.section2{
+    display:block;
 }
 
 .section-title {
@@ -260,6 +314,208 @@ width:200px !important;
 
 button.btn.btn-danger.text-center.justify-content-center {
     margin-left: 15%;
+}
+
+}
+@media (max-width: 768px){
+.section2 {
+    display: block;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 25px;
+    height: auto;
+}
+.main-content {
+    display: block;
+    justify-content: center;
+    margin-bottom: 0px;
+    height: auto;
+}
+
+.proizvodi-img img {
+    width: 300px;
+    height: 232px;
+}
+.usluga{
+    margin:auto;
+}
+
+.card{
+    width:160px !important;
+}
+
+.utovarivac h4.card-title.text-center {
+    font-size: 14px;
+}
+
+button.btn.btn-danger.text-center.justify-content-center {
+    margin-left: 0%;
+}
+
+}
+
+@media (max-width: 414px){
+    .second-content {
+        position: relative;
+        top: 10%;
+        left: 10%;
+        width: 335px;
+        height: auto;
+        position: relative;
+        display: inline-block;
+        background-color: #ffffffcc;
+        border-radius: 10px;
+    }
+
+    .section-heading h2.text-center {
+        padding: 18px;
+    }
+
+    .proizvodi-title {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .proizvodi {
+        height: auto;
+        display: block;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        padding: 10px;
+    }
+
+    .proizvodi-img {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0px 35px 0px;
+    }
+
+    .proizvodi-img img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .overlay {
+        height: 500px;
+        width: 100%;
+        position: absolute;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    .header {
+        height: 500px;
+        background: url(pozadinaa.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .naslov h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .naslov h1 {
+        font-size: 37px;
+    }
+
+    .naslov {
+        position: absolute;
+        text-align: center;
+        top: 28%;
+        left: 4%;
+        color: white;
+    }
+
+    .flex{
+        display: block;
+    }
+
+    .card {
+        width: 80% !important;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .card-body{
+        margin: auto;
+    }
+
+    .utovarivac h4.card-title.text-center {
+        font-size: 20px;
+    }
+
+
+
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: row;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    li.nav-item {
+        padding: 7px;
+    }
+
+    a.nav-item.nav-link {
+        font-size: 16px;
+    }
+
+    .slike {
+        width: 25%;
+        height: 250px;
+    }
+
+    .form {
+        transform: skew(0deg, 5deg);
+        padding: 60px;
+    }
+}
+
+@media (max-width: 365px){ 
+
+    a.nav-item.nav-link {
+        font-size: 13px;
+    }
+
+    .second-content {
+        position: relative;
+        top: 10%;
+        left: 10%;
+        width: 285px;
+        height: auto;
+        position: relative;
+        display: inline-block;
+        background-color: #ffffffcc;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 320px){
+    .main-content-second {
+        background-image: url(147.png);
+        height: 635px;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .second-content {
+        position: relative;
+        top: 10%;
+        left: 10%;
+        width: 260px;
+        height: auto;
+        position: relative;
+        display: inline-block;
+        background-color: #ffffffcc;
+        border-radius: 10px;
+    }
+}
+
+
 }
 
 }
