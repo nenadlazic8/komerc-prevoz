@@ -475,7 +475,7 @@ button.btn.btn-danger.text-center.justify-content-center {
     }
 }
 
-@media (max-width: 365px){ 
+@media (max-width: 375px){ 
 
     a.nav-item.nav-link {
         font-size: 13px;
