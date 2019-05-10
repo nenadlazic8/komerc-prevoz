@@ -36,19 +36,43 @@ a.nav-item.nav-link {
     background-size: cover;
 }
 
+.naslov {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 31%;
+    color: white;
+}
 
-  .naslov{
+
+.naslovi {
+    margin-top: 250px;
+    margin-bottom: 140px;
+    font-size: 50px;
+    display: inline-block;
+    
+    padding: 20px;
+    box-shadow: 0px 0px 45px #00000063;
+}
+
+.naslovnew{
+    display: flex;
+    justify-content: space-around;
+}
+
+  /*.naslov{
       position: absolute;
       top: 40%;
       left: 31%;
       color: white;
 
-  }
+  }*/
 
   .naslov h3{
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
-  }
+    font-family: 'Dosis', sans-serif;
+}
 
   .naslov h1{
     font-size: 90px;
@@ -93,11 +117,7 @@ button.navbar-toggler.collapsed {
     height: 600px;
 }
 
-.naslovi{
-    margin-top: 250px;
-    margin-bottom: 50px;
-    font-size: 50px;
-}
+
 
 .section-heading h2.text-center {
     padding: 33px;
@@ -200,6 +220,38 @@ button.btn.btn-danger.text-center.justify-content-center {
 .slike:hover{
     background-color: #ff000023;
     
+}
+/*PARTNERI*/
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+div#carouselExampleIndicators {
+    background: white;
+}
+
+img.d-block {
+    width: 500px;
+    margin: auto;
+    max-height: 360px;
+}
+
+.carousel-item{
+    padding-top: 100px;
+    height: 100%;
+}
+
+i.fas.fa-arrow-circle-right, i.fas.fa-arrow-circle-left {
+    color: black;
+    font-size: 33px;
+}
+
+.carousel-caption{
+    color: black;
 }
 
 /*KONTAKT*/
@@ -374,6 +426,10 @@ button.btn.btn-danger.text-center.justify-content-center {
     display: block;
 }
 
+.disabled a {
+    color: black;
+}
+
 }
 
 @media (max-width: 414px){
@@ -495,6 +551,12 @@ button.btn.btn-danger.text-center.justify-content-center {
         transform: skew(0deg, 5deg);
         padding: 60px;
     }
+
+    img.d-block {
+        width: 260px;
+        margin: auto;
+        max-height: 360px;
+    }
 }
 
 @media (max-width: 375px){ 
@@ -534,6 +596,10 @@ button.btn.btn-danger.text-center.justify-content-center {
         display: inline-block;
         background-color: #ffffffcc;
         border-radius: 10px;
+    }
+
+    a.nav-item.nav-link {
+        font-size: 10px;
     }
 }
 
